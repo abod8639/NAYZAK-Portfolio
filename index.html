@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAYZAK | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Global Volume Control -->
+    <div class="volume-control">
+        <label class="slider">
+            <input type="range" class="level" min="0" max="100" value="50">
+            <svg class="volume" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g>
+                    <path d="M18.36 19.36a1 1 0 0 1-.705-1.71C19.167 16.148 20 14.142 20 12s-.833-4.148-2.345-5.65a1 1 0 1 1 1.41-1.419C20.958 6.812 22 9.322 22 12s-1.042 5.188-2.935 7.069a.997.997 0 0 1-.705.291z" fill="currentColor" data-original="#000000"></path>
+                    <path d="M15.53 16.53a.999.999 0 0 1-.703-1.711C15.572 14.082 16 13.054 16 12s-.428-2.082-1.173-2.819a1 1 0 1 1 1.406-1.422A6 6 0 0 1 18 12a6 6 0 0 1-1.767 4.241.996.996 0 0 1-.703.289zM12 22a1 1 0 0 1-.707-.293L6.586 17H4c-1.103 0-2-.897-2-2V9c0-1.103.897-2 2-2h2.586l4.707-4.707A.998.998 0 0 1 13 3v18a1 1 0 0 1-1 1z" fill="currentColor" data-original="#000000"></path>
+                </g>
+            </svg>
+        </label>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="https://cdn.discordapp.com/attachments/1443230001402216460/1443353365160661164/Baki_Hanma.jfif?ex=6928c312&is=69277192&hm=b8e3e286edabe8074c8039d698c589a5950e0b8f1f1dd01145efb57af1a4bd8c&" class="avatar" alt="Avatar">
+                <h1 class="title">NAYZAK</h1>
+                <p class="subtitle">Creative Developer & Designer</p>
+                <p class="description">Welcome to my portfolio! I create beautiful and functional digital experiences.</p>
+                <!-- Social Media Icons -->
+                <div class="social-container">
+                    <div class="social-icons">
+                        <a href="https://discord.com/">
+                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355694467383358/discord_1.png?ex=692abf7d&is=69296dfd&hm=fbf4b6406cfab907410c229fec88078d6cc258ebd6aa634a633b6ec7bdac02d1&" alt="discord">
+                        </a>
+                        <a href="https://www.tiktok.com/ar/">
+                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355695742451742/tik-tok.png?ex=692abf7e&is=69296dfe&hm=bc351f22565eaafc43bb33776a23fd4f8e73396dd73ffee940e5efd0ca8b628a&" alt="tik-tok">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355694979092571/youtube.png?ex=692abf7d&is=69296dfd&hm=04d6a638a04f869e25f5e944cbc09855919559497d2f8d4dd182764513c776fe&" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-player">
+                <div class="music-cover">
+                    <img src="https://cdn.discordapp.com/attachments/1443230001402216460/1444019588101705818/image.png?ex=692b2f8a&is=6929de0a&hm=f7886d47118db855b0d31540ae1de201447dd7b45338f5109cf6a8c18af25511&" alt="Track Cover">
+                </div>
+                <div class="music-info">
+                    <div class="music-title">سورة المؤمنون</div>
+                    <div class="music-time-row">
+                        <span class="current-time">0:00</span>
+                        <input type="range" class="music-progress" min="0" value="0">
+                        <span class="total-duration">0:00</span>
+                    </div>
+                    <div class="music-controls">
+                        <button class="music-btn prev" aria-label="Previous">
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+                        <button class="music-btn play" aria-label="Play/Pause">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <button class="music-btn next" aria-label="Next">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
