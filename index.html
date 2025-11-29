@@ -6,8 +6,14 @@
     <title>NAYZAK | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1443230001402216460/1444099461407309964/snowflake.png?ex=692b79ed&is=692a286d&hm=0f4284039421bac0233c7d9e4724751888ac9088ef8a36beff80f1f2b749979f&">
+
 </head>
 <body>
+    <div id="intro-overlay">
+        <div class="intro-text">click to enter...</div>
+    </div>
+
     <!-- Background Video -->
     <video autoplay muted loop id="bg-video">
         <source src="bg.mp4" type="video/mp4">
@@ -15,16 +21,13 @@
 
     <!-- Global Volume Control -->
     <div class="volume-control">
-        <label class="slider">
-            <input type="range" class="level" min="0" max="100" value="50">
-            <svg class="volume" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <g>
-                    <path d="M18.36 19.36a1 1 0 0 1-.705-1.71C19.167 16.148 20 14.142 20 12s-.833-4.148-2.345-5.65a1 1 0 1 1 1.41-1.419C20.958 6.812 22 9.322 22 12s-1.042 5.188-2.935 7.069a.997.997 0 0 1-.705.291z" fill="currentColor" data-original="#000000"></path>
-                    <path d="M15.53 16.53a.999.999 0 0 1-.703-1.711C15.572 14.082 16 13.054 16 12s-.428-2.082-1.173-2.819a1 1 0 1 1 1.406-1.422A6 6 0 0 1 18 12a6 6 0 0 1-1.767 4.241.996.996 0 0 1-.703.289zM12 22a1 1 0 0 1-.707-.293L6.586 17H4c-1.103 0-2-.897-2-2V9c0-1.103.897-2 2-2h2.586l4.707-4.707A.998.998 0 0 1 13 3v18a1 1 0 0 1-1 1z" fill="currentColor" data-original="#000000"></path>
-                </g>
-            </svg>
-        </label>
-    </div>
+    <label class="slider">
+        <input type="range" class="level" min="0" max="100" value="50">
+        <!-- استخدم هنا صورة PNG بدل SVG -->
+        <img src="https://cdn.discordapp.com/attachments/1443230001402216460/1444081472909738156/medium-volume_1.png?ex=692b692c&is=692a17ac&hm=179c2271ccc62eff44d2e2f11466a645b8f7bfe68fa54c55733fb345d6d00c8c&" alt="Volume" class="volume">
+    </label>
+</div>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -33,18 +36,18 @@
                 <img src="img/Baki Hanma.jfif" class="avatar" alt="Avatar">
                 <h1 class="title">NAYZAK</h1>
                 <p class="subtitle">Creative Developer & Designer</p>
-                <p class="description">Welcome to my portfolio! I create beautiful and functional digital experiences.</p>
+                <p class="description">Welcome to my portfoli   o! I create beautiful and functional digital experiences.</p>
                 <!-- Social Media Icons -->
                 <div class="social-container">
                     <div class="social-icons">
                         <a href="https://discord.com/">
-                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355694467383358/discord_1.png?ex=692abf7d&is=69296dfd&hm=fbf4b6406cfab907410c229fec88078d6cc258ebd6aa634a633b6ec7bdac02d1&" alt="discord">
+                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355694467383358/discord_1.png?ex=692c10fd&is=692abf7d&hm=fa210c6c0eb7e7bec75d324f42cd58d99deda1eeb258d68e2302a2576fd7fbd2&" alt="discord">
                         </a>
                         <a href="https://www.tiktok.com/ar/">
-                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355695742451742/tik-tok.png?ex=692abf7e&is=69296dfe&hm=bc351f22565eaafc43bb33776a23fd4f8e73396dd73ffee940e5efd0ca8b628a&" alt="tik-tok">
+                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355695742451742/tik-tok.png?ex=692c10fe&is=692abf7e&hm=6af71cb9520f665947876cb6133599c502d4cb3921b5d49b76ba3f74c64431bc&" alt="tik-tok">
                         </a>
                         <a href="https://www.youtube.com/">
-                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355694979092571/youtube.png?ex=692abf7d&is=69296dfd&hm=04d6a638a04f869e25f5e944cbc09855919559497d2f8d4dd182764513c776fe&" alt="youtube">
+                            <img src="https://cdn.discordapp.com/attachments/1443354684013154435/1443355694979092571/youtube.png?ex=692c10fd&is=692abf7d&hm=c557e38d0f2ebd81a05439edc4c7c1384c91e2eb7815a4472de640299bf4a185&" alt="youtube">
                         </a>
                     </div>
                 </div>
@@ -52,10 +55,10 @@
 
             <div class="music-player">
                 <div class="music-cover">
-                    <img src="https://cdn.discordapp.com/attachments/1443230001402216460/1444019588101705818/image.png?ex=692b2f8a&is=6929de0a&hm=f7886d47118db855b0d31540ae1de201447dd7b45338f5109cf6a8c18af25511&" alt="Track Cover">
+                    <img src="https://cdn.discordapp.com/attachments/1443230001402216460/1444060449799671849/Lucid_Origin_Create_a_baki_stylized_phonk_music_cover_based_on_3.jpg?ex=692b5598&is=692a0418&hm=6faf52d4814a2e4d6f8a55520a10dee72c4052ea931b225f3c4b25383aa4e541&" alt="Track Cover">
                 </div>
                 <div class="music-info">
-                    <div class="music-title">سورة المؤمنون</div>
+                    <div class="music-title">love nwantiti (ah ah ah)</div>
                     <div class="music-time-row">
                         <span class="current-time">0:00</span>
                         <input type="range" class="music-progress" min="0" value="0">
