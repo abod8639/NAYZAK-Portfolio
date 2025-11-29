@@ -3,8 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('https://cdn.discordapp.com/attachments/1418619302046597241/1443771633771745340/Untitled-1.png?ex=692a489d&is=6928f71d&hm=2479f49d822bc8389fed8b64fcfce626113cd5f371ca4e0ef744492eab38eb89&'), auto !important;
-
+    cursor: url('https://media.discordapp.net/attachments/1418619302046597241/1443771633771745340/Untitled-1.png?ex=692af15d&is=69299fdd&hm=82b7f8d4a85c3f1cb132a46e4ee9cd457762cbc061929417fa226f9d331bf773&=&format=webp&quality=lossless') 16 16, auto !important;
 }
 
 body {
@@ -30,6 +29,30 @@ html, body {
     padding: 0;
 }
 
+/* Intro overlay */
+#intro-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+#intro-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.intro-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
 
 @keyframes fadeBackground {
     from {
@@ -264,77 +287,88 @@ html, body {
     position: fixed;
     top: 18px;
     left: 18px;
-    padding: 6px 14px;
-    border-radius: 999px;
-    z-index: 50;
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    padding: 6px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(167, 14, 128, 0.25);
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.volume-control:hover {
+    width: 190px;
 }
 
 .slider {
   /* slider */
-  --slider-width: 200px;
-  --slider-height: 6px;
+  --slider-width: 125px;
+  --slider-height: 4px;
   --slider-bg: rgb(82, 82, 82);
   --slider-border-radius: 999px;
   /* level */
-  --level-color: #fff;
-  --level-transition-duration: .5s;
+    --level-color: #fff;
+    --level-transition-duration: .5s;
   /* icon */
-  --icon-margin: 15px;
-  --icon-color: var(--slider-bg);
-  --icon-size: 60px;
+    --icon-margin: 15px;
+    --icon-color: var(--slider-bg);
+    --icon-size: 38px;
 
-  cursor: pointer;
-  display: inline-flex;
-  flex-direction: row-reverse;
-  align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .slider .volume {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: var(--icon-margin);
-  color: var(--icon-color);
-  width: var(--icon-size);
-  height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: var(--icon-margin);
+    color: var(--icon-color);
+    width: var(--icon-size);
+    height: auto;
 }
 
 .slider .level {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: var(--slider-width);
-  height: var(--slider-height);
-  background: var(--slider-bg);
-  overflow: hidden;
-  border-radius: var(--slider-border-radius);
-  cursor: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--slider-width);
+    height: var(--slider-height);
+    background: var(--slider-bg);
+    overflow: hidden;
+    border-radius: var(--slider-border-radius);
+    cursor: inherit;
 
   /* start hidden from left */
-  transform: scaleX(0);
-  transform-origin: left center;
-  -webkit-transition: transform var(--level-transition-duration), height var(--level-transition-duration);
-  -o-transition: transform var(--level-transition-duration), height var(--level-transition-duration);
-  transition: transform var(--level-transition-duration), height var(--level-transition-duration);
+    transform: scaleX(0);
+    transform-origin: left center;
+    -webkit-transition: transform var(--level-transition-duration), height var(--level-transition-duration);
+    -o-transition: transform var(--level-transition-duration), height var(--level-transition-duration);
+    transition: transform var(--level-transition-duration), height var(--level-transition-duration);
 }
 
 .slider .level::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
-  -webkit-box-shadow: -200px 0 0 200px var(--level-color);
-  box-shadow: -200px 0 0 200px var(--level-color);
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    -webkit-box-shadow: -200px 0 0 200px var(--level-color);
+    box-shadow: -200px 0 0 200px var(--level-color);
 }
 
 .slider .level::-moz-range-thumb {
-  border: none;
-  width: 0;
-  height: 0;
-  box-shadow: -200px 0 0 200px var(--level-color);
+    border: none;
+    width: 0;
+    height: 0;
+    box-shadow: -200px 0 0 200px var(--level-color);
 }
 
 .slider:hover .level {
-  transform: scaleX(1);
-  height: calc(var(--slider-height) * 2);
+    transform: scaleX(1);
+    height: calc(var(--slider-height) * 2);
 }
 
 /* Social Media Container with Frosted Glass Effect */

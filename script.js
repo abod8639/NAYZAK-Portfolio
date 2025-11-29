@@ -9,6 +9,21 @@ if (musicPlayer) {
     const currentTimeEl = musicPlayer.querySelector('.current-time');
     const durationEl = musicPlayer.querySelector('.total-duration');
 
+    // Intro overlay logic - first click starts audio and hides overlay
+    const introOverlay = document.getElementById('intro-overlay');
+    if (introOverlay) {
+        const handleFirstClick = () => {
+            introOverlay.classList.add('hidden');
+            audio.play().then(() => {
+                playBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+            }).catch(() => {
+                // ignore play errors (e.g. browser restrictions)
+            });
+            introOverlay.removeEventListener('click', handleFirstClick);
+        };
+        introOverlay.addEventListener('click', handleFirstClick);
+    }
+
     const formatTime = (time) => {
         const minutes = Math.floor(time / 60) || 0;
         const seconds = Math.floor(time % 60) || 0;
