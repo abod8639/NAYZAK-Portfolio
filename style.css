@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('https://media.discordapp.net/attachments/1418619302046597241/1443771633771745340/Untitled-1.png?ex=692c42dd&is=692af15d&hm=f0b467c928e70e4a7ece644992be4548f569f4f1d44f365b171ca4b79972caea&=&format=webp&quality=lossless') 16 16, auto !important;
+    cursor: url('https://media.discordapp.net/attachments/1418619302046597241/1443771633771745340/Untitled-1.png?ex=692af15d&is=69299fdd&hm=82b7f8d4a85c3f1cb132a46e4ee9cd457762cbc061929417fa226f9d331bf773&=&format=webp&quality=lossless') 16 16, auto !important;
+    user-select: none;
 }
 
 body {
@@ -402,6 +403,4 @@ html, body {
 
 @keyframes glow {
     0%, 100% { filter: drop-shadow(0 0 5px #ffffffcc); }
-
 }
-
