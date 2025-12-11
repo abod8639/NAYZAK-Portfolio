@@ -1,35 +1,101 @@
 /* Responsive Design */
+/* Tablet and smaller */
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .subtitle {
-    font-size: 1.2rem;
-  }
-}
-
+    font-size: 1.1rem;
+    }
+    
+    .music-player {
+      padding: 20px 24px;
+    
+    
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+    
+        /* Reduce particle effects on tablets */
+        .orb {
+          opacity: 0.2;
+        }
+      }
+                                /* Mobile devices */
 @media screen and (max-width: 480px) {
+  .hero-content {
+      padding: 32px 24px;
+    }
   .avatar {
     width: 120px;
     height: 120px;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .description {
+                                .subtitle {
     font-size: 1rem;
   }
 
+                                .description {
+                                  font-size: 0.9rem;
+                                }
   .music-player {
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
+      padding: 20px;
+      gap: 16px;
+    }
+    
+    .music-cover img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .social-icons {
+      gap: 16px;
+    }
+    
+    .social-icons img {
+      width: 36px;
+      height: 36px;
+    }
+    
+    .volume-control {
+      top: 12px;
+      left: 12px;
+      width: 50px;
+      height: 50px;
+    }
+    
+    .volume-control:hover {
+      width: 180px;
+    }
+    
+    /* Hide or minimize particle effects on mobile for performance */
+    .orb {
+      opacity: 0.15;
+      filter: blur(40px);
+    }
+    
+    .grid-pattern {
+      opacity: 0.3;
+    }
+    
+    /* Position SoundCloud player better on mobile */
+    div[style*="position: fixed"][style*="bottom: 20px"] {
+      bottom: 10px !important;
+      right: 10px !important;
+      left: 10px !important;
+      max-width: calc(100% - 20px) !important;
   }
 }
 
+/* Background Video */
 #bg-video {
   position: fixed;
   top: 0;
@@ -38,4 +104,17 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+}
 }

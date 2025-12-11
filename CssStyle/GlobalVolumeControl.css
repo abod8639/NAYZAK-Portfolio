@@ -1,37 +1,67 @@
 /* Global volume control */
 .volume-control {
   position: fixed;
-  top: 18px;
-  left: 18px;
+  top: 20px;
+    left: 20px;
   display: inline-block;
-  width: 56px;
-  height: 56px;
-  padding: 6px;
+  width: 60px;
+    height: 60px;
+    padding: 8px;
   text-align: center;
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(167, 14, 128, 0.25);
-  transition: width 0.3s ease;
+  /* Enhanced glassmorphism */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+      0 8px 32px rgba(31, 38, 135, 0.37),
+      0 0 20px rgba(102, 126, 234, 0.2);
+  
+    transition: all var(--transition-normal);
   overflow: hidden;
+  z-index: 1000;
+  
+    /* Pulsing glow animation */
+    animation: volumePulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes volumePulse {
+  
+    0%,
+    100% {
+      box-shadow:
+        0 8px 32px rgba(31, 38, 135, 0.37),
+        0 0 20px rgba(102, 126, 234, 0.2);
+    }
+  
+    50% {
+      box-shadow:
+        0 8px 32px rgba(31, 38, 135, 0.37),
+        0 0 30px rgba(118, 75, 162, 0.4);
+    }
 }
 
 .volume-control:hover {
-  width: 190px;
+  width: 200px;
+    box-shadow:
+      0 12px 40px rgba(31, 38, 135, 0.5),
+      0 0 40px rgba(102, 126, 234, 0.4);
 }
 
 .slider {
   /* slider */
-  --slider-width: 125px;
-  --slider-height: 4px;
-  --slider-bg: rgb(82, 82, 82);
+  --slider-width: 130px;
+    --slider-height: 5px;
+    --slider-bg: rgba(255, 255, 255, 0.2);
   --slider-border-radius: 999px;
   /* level */
-  --level-color: #fff;
-  --level-transition-duration: .5s;
+  --level-color: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    --level-transition-duration: 0.4s;
   /* icon */
   --icon-margin: 15px;
   --icon-color: var(--slider-bg);
-  --icon-size: 38px;
+  --icon-size: 40px;
 
   cursor: pointer;
   display: inline-flex;
@@ -41,13 +71,17 @@
 
 .slider .volume {
   display: inline-block;
-
   vertical-align: top;
   margin-right: var(--icon-margin);
   color: var(--icon-color);
   width: var(--icon-size);
   height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: all var(--transition-fast);
+  }
 
+.slider:hover .volume {
+  filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.6));
 }
 
 .slider .level {
@@ -64,24 +98,25 @@
   /* start hidden from left */
   transform: scaleX(0);
   transform-origin: left center;
-  -webkit-transition: transform var(--level-transition-duration), height var(--level-transition-duration);
-  -o-transition: transform var(--level-transition-duration), height var(--level-transition-duration);
-  transition: transform var(--level-transition-duration), height var(--level-transition-duration);
+  transition:
+      transform var(--level-transition-duration),
+      height var(--level-transition-duration);
 }
 
 .slider .level::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 0;
   height: 0;
-  -webkit-box-shadow: -200px 0 0 200px var(--level-color);
-  box-shadow: -200px 0 0 200px var(--level-color);
+  box-shadow: -200px 0 0 200px #667eea;
+    background: linear-gradient(90deg, #667eea, #764ba2);
 }
 
 .slider .level::-moz-range-thumb {
   border: none;
   width: 0;
   height: 0;
-  box-shadow: -200px 0 0 200px var(--level-color);
+  box-shadow: -200px 0 0 200px #667eea;
+    background: linear-gradient(90deg, #667eea, #764ba2);
 }
 
 .slider:hover .level {

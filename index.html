@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DEXTER Dev - Creative Developer & Designer. Explore my portfolio of beautiful and functional digital experiences." />
+    <meta name="keywords" content="developer, designer, portfolio, web development, creative" />
+    <meta name="author" content="DEXTER Dev" />
     <title>NAYZAK | Portfolio</title>
 
     <link rel="stylesheet" href="CssStyle/bodyStyle.css" />
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="CssStyle/GlobalVolumeControl.css" />
     <link rel="stylesheet" href="CssStyle/ResponsiveDesign.css" />
     <link rel="stylesheet" href="CssStyle/IntroOverlay.css" />
+    <link rel="stylesheet" href="CssStyle/ParticleBackground.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,6 +28,15 @@
   </head>
 
   <body>
+    <!-- Particle Background -->
+    <div class="particle-background">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-pattern"></div>
+      <div class="gradient-overlay"></div>
+    </div>
+
     <div id="intro-overlay">
       <div class="intro-text">click to enter...</div>
     </div>
@@ -57,7 +70,7 @@
           <h1 class="title">DEXTER Dev</h1>
           <p class="subtitle">Creative Developer & Designer</p>
           <p class="description">
-            Welcome to my portfoli o! I create beautiful and functional digital
+            Welcome to my portfolio! I create beautiful and functional digital
             experiences.
           </p>
           <!-- Social Media Icons -->
@@ -77,15 +90,15 @@
               </a>
             </div>
           </div>
+
         </div>
 
         <div class="music-player">
           <div class="music-cover">
             <div class="music-cover"></div>
-            <img
-              src="https://i.pinimg.com/1200x/63/52/2a/63522a9033b9e9181342f54f4e4c464e.jpg"
-            />
+            <img src="https://i.pinimg.com/1200x/63/52/2a/63522a9033b9e9181342f54f4e4c464e.jpg" />
           </div>
+
           <div class="music-info">
             <div class="music-title">love nwantiti (ah ah ah)</div>
             <div class="music-time-row">
@@ -93,9 +106,9 @@
               <input type="range" class="music-progress" min="0" value="0" />
               <span class="total-duration">0:00</span>
             </div>
-          </div>
+          </div> 
 
-          <div class="music-controls">
+           <div class="music-controls">
             <button class="music-btn prev" aria-label="Previous">
               <i class="fa-solid fa-backward-step"></i>
             </button>
@@ -111,45 +124,33 @@
       </div>
     </section>
 
+    <!-- SoundCloud Player Section -->
+    <div style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(41, 41, 41, 0.05);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      max-width: 350px;
+    ">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1129175236&color=%23667eea&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false"
+      >
+      </iframe>
+    </div>
+
     <script src="script.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
-
-    <iframe
-      
-      width="20%"
-      height="250"
-      scrolling="no"
-      frameborder="no"
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1129175236&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-    >
-    </iframe>
-    <div
-      style="
-        font-size: 10px;
-        color: #cccccc;
-        line-break: anywhere;
-        word-break: normal;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
-          Garuda, Verdana,
-          Tahoma, sans-serif;
-        font-weight: 100; ">
-      <a
-        href="https://soundcloud.com/skelermusic"
-        title="skeler."
-        target="_blank"
-        style="color: #cccccc; text-decoration: none" 
-        >skeler.</a>·
-      <a
-        href="https://soundcloud.com/skelermusic/juice-wrld-conversations-skeler-remix"
-        title="Juice WRLD - Conversations (Skeler Remix)"
-        target="_blank"
-        style="color: #cccccc; text-decoration: none"
-        >Juice WRLD - Conversations (Skeler Remix)</a>
-
-    </div>
   </body>
 </html>
