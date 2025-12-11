@@ -74,52 +74,7 @@ body {
     padding: 0 20px;
 }
 
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
 
-.hero-content {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 32px 20px;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.avatar {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.title {
-    font-size: 2.4rem;
-    margin-bottom: 8px;
-    color: #ffffff;
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 14px;
-    color: #ffffff;
-    opacity: 0.9;
-}
-
-.description {
-    font-size: 0.95rem;
-    margin-bottom: 22px;
-    color: #ffffff;
-    opacity: 0.9;
-}
 
 
 
