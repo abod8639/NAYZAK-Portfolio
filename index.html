@@ -1,100 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NAYZAK | Portfolio</title>
 
-    <link rel="stylesheet" href="CssStyle/bodyStyle.css">
-    <link rel="stylesheet" href="CssStyle/MusicPlayerCard.css">
-    <link rel="stylesheet" href="CssStyle/HeroSection.css">
-    <link rel="stylesheet" href="CssStyle/SocialMediaContainer.css">
-    <link rel="stylesheet" href="CssStyle/GlobalVolumeControl.css">
-    <link rel="stylesheet" href="CssStyle/ResponsiveDesign.css">
-    <link rel="stylesheet" href="CssStyle/IntroOverlay.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png"
-        href="https://cdn.discordapp.com/attachments/1443230001402216460/1444099461407309964/snowflake.png?ex=692b79ed&is=692a286d&hm=0f4284039421bac0233c7d9e4724751888ac9088ef8a36beff80f1f2b749979f&">
+    <link rel="stylesheet" href="CssStyle/bodyStyle.css" />
+    <link rel="stylesheet" href="CssStyle/MusicPlayerCard.css" />
+    <link rel="stylesheet" href="CssStyle/HeroSection.css" />
+    <link rel="stylesheet" href="CssStyle/SocialMediaContainer.css" />
+    <link rel="stylesheet" href="CssStyle/GlobalVolumeControl.css" />
+    <link rel="stylesheet" href="CssStyle/ResponsiveDesign.css" />
+    <link rel="stylesheet" href="CssStyle/IntroOverlay.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.discordapp.com/attachments/1443230001402216460/1444099461407309964/snowflake.png?ex=692b79ed&is=692a286d&hm=0f4284039421bac0233c7d9e4724751888ac9088ef8a36beff80f1f2b749979f&"
+    />
+  </head>
 
-</head>
-
-
-<body>
+  <body>
     <div id="intro-overlay">
-        <div class="intro-text">click to enter...</div>
+      <div class="intro-text">click to enter...</div>
     </div>
 
     <!-- Background Video -->
     <video autoplay muted loop id="bg-video">
-        <source src="https://res.cloudinary.com/dunlvtx1t/video/upload/v1764621643/bdg_kpzqdo.mp4" type="video/mp4">
+      <source
+        src="https://res.cloudinary.com/dunlvtx1t/video/upload/v1764621643/bdg_kpzqdo.mp4"
+        type="video/mp4"
+      />
     </video>
 
     <!-- Global Volume Control -->
     <div class="volume-control">
-        <label class="slider">
-            <input type="range" class="level" min="0" max="100" value="50">
-            <!-- استخدم هنا صورة PNG بدل SVG -->
-            <img src="icons/sondi.png" alt="Volume" class="volume">
-            <!-- <img src="icons/sondi.png" alt="Volume" class="volume"> -->
-        </label>
+      <label class="slider">
+        <input type="range" class="level" min="0" max="100" value="50" />
+        <img src="icons/sondi.png" alt="Volume" class="volume" />
+        <!-- <img src="icons/sondi.png" alt="Volume" class="volume"> -->
+      </label>
     </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <img src="https://avatars.githubusercontent.com/u/108903062?v" class="avatar" alt="Avatar">
-                <h1 class="title">DEXTER Dev</h1>
-                <p class="subtitle">Creative Developer & Designer</p>
-                <p class="description">Welcome to my portfoli o! I create beautiful and functional digital experiences.
-                </p>
-                <!-- Social Media Icons -->
-                <div class="social-container">
-                    <div class="social-icons">
-                        <a href="https://discord.gg/nz42NcE3fa" target="_blank">
-                            <img src="icons/discord_1.png" alt="discord">
-                        </a>
-                        <a href="https://www.tiktok.com/ar/" target="_blank">
-                            <img src="icons/tik-tok.png" alt="tik-tok">
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <img src="icons/youtube.png" alt="youtube">
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <img
+            src="https://avatars.githubusercontent.com/u/108903062?v"
+            class="avatar"
+            alt="Avatar"
+          />
+          <h1 class="title">DEXTER Dev</h1>
+          <p class="subtitle">Creative Developer & Designer</p>
+          <p class="description">
+            Welcome to my portfoli o! I create beautiful and functional digital
+            experiences.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-container">
+            <div class="social-icons">
+              <a href="https://discord.gg/ib1l1/" target="_blank">
+                <img src="icons/discord_1.png" alt="discord" />
+              </a>
+              <a href="https://www.reddit.com/u/dexter8639/" target="_blank">
+                <img src="icons/reddit(2).png" alt="reddit" />
+              </a>
+              <a href="https://www.instagram.com/ib1l1/" target="_blank">
+                <img src="icons/instagram(1).png" alt="instagram" />
+              </a>
+              <a href="https://github.com/abod8639/" target="_blank">
+                <img src="icons/github.png" alt="github" />
+              </a>
             </div>
-
-            <div class="music-player">
-                <div class="music-cover">
-                    <img src="img/Lucid_Origin.jpg" alt="Track Cover">
-                </div>
-                <div class="music-info">
-                    <div class="music-title">love nwantiti (ah ah ah)</div>
-                    <div class="music-time-row">
-                        <span class="current-time">0:00</span>
-                        <input type="range" class="music-progress" min="0" value="0">
-                        <span class="total-duration">0:00</span>
-                    </div>
-                </div>
-                <div class="music-controls">
-                    <button class="music-btn prev" aria-label="Previous">
-                        <i class="fa-solid fa-backward-step"></i>
-                    </button>
-                    <button class="music-btn play" aria-label="Play/Pause">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
-                    <button class="music-btn next" aria-label="Change Song">
-                        <i class="fa-solid fa-forward-step"></i>
-                    </button>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="music-player">
+          <div class="music-cover">
+            <div class="music-cover"></div>
+            <img
+              src="https://i.pinimg.com/1200x/63/52/2a/63522a9033b9e9181342f54f4e4c464e.jpg"
+            />
+          </div>
+          <div class="music-info">
+            <div class="music-title">love nwantiti (ah ah ah)</div>
+            <div class="music-time-row">
+              <span class="current-time">0:00</span>
+              <input type="range" class="music-progress" min="0" value="0" />
+              <span class="total-duration">0:00</span>
+            </div>
+          </div>
+
+          <div class="music-controls">
+            <button class="music-btn prev" aria-label="Previous">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+            <button class="music-btn play" aria-label="Play/Pause">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="music-btn next" aria-label="Change Song">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <script src="script.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
 
-</body>
+    <iframe
+      
+      width="20%"
+      height="250"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1129175236&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+    >
+    </iframe>
+    <div
+      style="
+        font-size: 10px;
+        color: #cccccc;
+        line-break: anywhere;
+        word-break: normal;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+          Garuda, Verdana,
+          Tahoma, sans-serif;
+        font-weight: 100; ">
+      <a
+        href="https://soundcloud.com/skelermusic"
+        title="skeler."
+        target="_blank"
+        style="color: #cccccc; text-decoration: none" 
+        >skeler.</a>·
+      <a
+        href="https://soundcloud.com/skelermusic/juice-wrld-conversations-skeler-remix"
+        title="Juice WRLD - Conversations (Skeler Remix)"
+        target="_blank"
+        style="color: #cccccc; text-decoration: none"
+        >Juice WRLD - Conversations (Skeler Remix)</a>
 
+    </div>
+  </body>
 </html>

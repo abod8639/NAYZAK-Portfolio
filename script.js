@@ -3,9 +3,22 @@ const musicPlayer = document.querySelector('.music-player');
 if (musicPlayer) {
     // Playlist array with multiple songs
     const playlist = [
-        { src: 'mp3/love nwantiti.mp3', title: 'love nwantiti (ah ah ah)' },
-        { src: 'mp3/ჩუბინა.mp3', title: 'ჩუბინა' },
-        { src: 'mp3/Central Cee x Dave.mp3', title: 'Central Cee x Dave' }
+        { 
+        //   src: 'mp3/love nwantiti.mp3',
+          src: 'https://soundcloud.com/skelermusic/juice-wrld-conversations-skeler-remix?in=f-kiew/sets/phonk&si=c32c246170184f13a7168aace58b264c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+        title: 'love nwantiti (ah ah ah)',
+        cover: 'https://i.pinimg.com/1200x/9f/c3/43/9fc34321247067b21cd3c654af5a4c2e.jpg',    
+    },
+        { 
+              src: 'mp3/ჩუბინა.mp3', 
+            title: 'ჩუბინა',
+            cover: 'https://i.pinimg.com/736x/aa/24/83/aa2483cef350e8d3b78f831d755c0f18.jpg',    
+        },
+        { 
+              src: 'mp3/Central Cee x Dave.mp3', 
+            title: 'Central Cee x Dave',
+            cover: 'https://i.pinimg.com/1200x/e8/5e/79/e85e79a79818d3b91f0485047049d657.jpg',    
+        }
     ];
     
     let currentSongIndex = 0;
