@@ -1,8 +1,9 @@
 .soundCloud {
-
+  /* margin-right: auto; */
+    /* margin-left: auto; */
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 360px;
+    /* right: 20px; */
   z-index: 100;
   border-radius: 16px;
   overflow: hidden;

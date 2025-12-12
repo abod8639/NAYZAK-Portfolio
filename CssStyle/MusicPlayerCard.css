@@ -1,4 +1,4 @@
-/* Music Player Card */
+Music Player Card
 .music-player {
   margin-top: 32px;
   display: flex;
@@ -24,13 +24,12 @@
     transition: all var(--transition-normal);
   }
   
-  .music-player:hover {
+                .music-player:hover {
     transform: translateY(-2px);
     box-shadow:
       0 20px 50px rgba(0, 0, 0, 0.5),
       inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
-  }
-  
+
   @keyframes musicPlayerFadeIn {
     from {
       opacity: 0;
@@ -213,3 +212,4 @@
   .music-btn:active {
     transform: scale(0.95);
 }
+                }
